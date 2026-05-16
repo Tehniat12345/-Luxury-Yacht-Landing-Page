@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Yacht | The Peak of Luxury</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,700&family=Montserrat:wght@300;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body, html { height: 100vh; overflow: hidden; font-family: 'Montserrat', sans-serif; background: #001219; }
+
+        .yacht-wrapper {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* Deep Ocean Background */
+            background: linear-gradient(rgba(0, 18, 25, 0.8), rgba(0, 18, 25, 0.8)), 
+                        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073') no-repeat center center/cover;
+            padding: 20px;
+        }
+
+        .main-card {
+            width: 95%;
+            max-width: 1250px;
+            height: 80vh;
+            background: #fff;
+            display: flex;
+            box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+            position: relative;
+            /* Inward Border for Luxury Look */
+            outline: 20px solid rgba(255, 255, 255, 0.1);
+            outline-offset: -40px;
+        }
+
+        /* Left Side: Content */
+        .info-panel {
+            flex: 1;
+            padding: 100px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: #fff;
+            z-index: 5;
+        }
+
+        .premium-label {
+            color: #9b7e46; /* Soft Gold */
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            margin-bottom: 20px;
+            font-size: 0.8rem;
+        }
+
+        h1 {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 5.5rem;
+            line-height: 0.9;
+            color: #001219;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        h1 span {
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 3.5rem;
+            color: #005f73;
+            font-style: normal;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 45px;
+            font-size: 1.1rem;
+            max-width: 450px;
+        }
+
+        .charter-btn {
+            padding: 20px 50px;
+            background: #001219;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.4s;
+            width: fit-content;
+            border: 1px solid #001219;
+        }
+
+        .charter-btn:hover {
+            background: transparent;
+            color: #001219;
+            padding-left: 70px;
+        }
+
+        /* Right Side: Yacht Photo */
+        .visual-panel {
+            flex: 1.5;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .yacht-pic {
+            width: 100%;
+            height: 100%;
+            /* High-End Superyacht Image */
+            background: url('https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?q=80&w=2070') no-repeat center center/cover;
+            transition: 2.5s ease;
+        }
+
+        .main-card:hover .yacht-pic {
+            transform: scale(1.1) translateX(20px);
+        }
+
+        .floating-stats {
+            position: absolute;
+            bottom: 60px;
+            right: 60px;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            text-align: left;
+            border-left: 5px solid #9b7e46;
+        }
+
+        .floating-stats span {
+            display: block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #9b7e46;
+            margin-bottom: 5px;
+        }
+
+        .floating-stats b {
+            font-size: 1.2rem;
+            color: #001219;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="yacht-wrapper">
+        <div class="main-card">
+            <div class="info-panel">
+                <div class="premium-label">Elite Experience</div>
+                <h1>Azure<br><span>Voyage.</span></h1>
+                <p>Samundar ki lehron par badshahat. Hamari ultra-luxury yachts apko deti hain sukoon aur privacy ka woh be-misaal tajurba jo sirf khwabon mein hota hai.</p>
+                <a href="#" class="charter-btn">Charter Now</a>
+            </div>
+
+            <div class="visual-panel">
+                <div class="yacht-pic"></div>
+                <div class="floating-stats">
+                    <span>VESSEL LENGTH</span>
+                    <b>120 METERS</b>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
